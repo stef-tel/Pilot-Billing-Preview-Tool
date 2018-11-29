@@ -1,0 +1,85 @@
+Subscription.CostType__c,Subscription.CostTypeValue__c,Subscription.Entity__c,Subscription.Status,Subscription.SubscriptionEndDate,Subscription.TermType,Account.AccountNumber,Account.BillCycleDay,Account.Batch,Account.CompanyCode__c,Account.Currency,Account.CustomerCompanyName__c,Account.FreeTextAttribute1__c,Account.FreeTextAttribute1__c,Account.SEAccountID__c,Account.Status,BillToContact.City,BillToContact.Country
+"",,EBA,Active,2019-03-01,TERMED,A00006227,1,Batch1,SE IE,SGD,,,,,Active,City,Singapore
+"",,EBA,Active,2019-03-01,TERMED,A00006227,1,Batch1,SE IE,SGD,,,,,Active,City,Singapore
+"",,EBA,Active,2019-03-01,TERMED,A00006227,1,Batch1,SE IE,SGD,,,,,Active,City,Singapore
+"",,EBA,Active,2019-01-01,TERMED,A00006227,1,Batch1,SE IE,SGD,,,,,Active,City,Singapore
+"",,EBA,Active,2019-08-01,TERMED,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,2019-08-01,TERMED,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,2019-08-01,TERMED,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,2020-09-01,TERMED,A00006227,1,Batch1,SE IE,SGD,,,,,Active,City,Singapore
+"",,EBA,Active,2020-11-01,TERMED,A00006227,1,Batch1,SE IE,SGD,,,,,Active,City,Singapore
+"",,EBA,Active,,EVERGREEN,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+Cost center,6478,EBA,Active,,EVERGREEN,A00001445,1,Batch1,SE DE,EUR,GP Test Solar,1854.28 SGD,1854.28 SGD,,Active,Delhi,France
+Cost center,6478,EBA,Active,,EVERGREEN,A00001445,1,Batch1,SE DE,EUR,GP Test Solar,1854.28 SGD,1854.28 SGD,,Active,Delhi,France
+Cost center,6478,EBA,Active,,EVERGREEN,A00001445,1,Batch1,SE DE,EUR,GP Test Solar,1854.28 SGD,1854.28 SGD,,Active,Delhi,France
+Cost center,6478,EBA,Active,,EVERGREEN,A00001445,1,Batch1,SE DE,EUR,GP Test Solar,1854.28 SGD,1854.28 SGD,,Active,Delhi,France
+"",,EBA,Active,2019-11-01,TERMED,A00006227,1,Batch1,SE IE,SGD,,,,,Active,City,Singapore
+"",,EBA,Active,2019-11-01,TERMED,A00006227,1,Batch1,SE IE,SGD,,,,,Active,City,Singapore
+"",,EBA,Active,2020-03-01,TERMED,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,2019-11-01,TERMED,A00006227,1,Batch1,SE IE,SGD,,,,,Active,City,Singapore
+"",,EBA,Active,2019-11-01,TERMED,A00006227,1,Batch1,SE IE,SGD,,,,,Active,City,Singapore
+"",,EBA,Active,2021-09-01,TERMED,A00006227,1,Batch1,SE IE,SGD,,,,,Active,City,Singapore
+"",,EBA,Active,2021-04-01,TERMED,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,2021-12-01,TERMED,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,2021-04-01,TERMED,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,2021-04-01,TERMED,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,2021-04-01,TERMED,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,2021-04-01,TERMED,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,2021-04-01,TERMED,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,2021-04-01,TERMED,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,2019-12-01,TERMED,A00006227,1,Batch1,SE IE,SGD,,,,,Active,City,Singapore
+"",,EBA,Active,2021-04-01,TERMED,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,2021-04-01,TERMED,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,2021-04-01,TERMED,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,2021-04-01,TERMED,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,2021-04-01,TERMED,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,2021-04-01,TERMED,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,2021-04-01,TERMED,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,2021-05-01,TERMED,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,2021-05-01,TERMED,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,2019-09-27,TERMED,A00006080,1,Batch5,SE AU,EUR,THBS123!,,,1234,Active,New York,France
+"",,EBA,Active,2019-09-27,TERMED,A00006080,1,Batch5,SE AU,EUR,THBS123!,,,1234,Active,New York,France
+"",,EBA,Active,,EVERGREEN,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,,EVERGREEN,A00006669,1,Batch2,SE IE,GBP,ABBEYWOOD COMMUNITY SCHOOL,,,,Active,STOKE GIFFORD,United Kingdom
+"",,EBA,Active,,EVERGREEN,A00006669,1,Batch2,SE IE,GBP,ABBEYWOOD COMMUNITY SCHOOL,,,,Active,STOKE GIFFORD,United Kingdom
+"",,EBA,Active,,EVERGREEN,A00006669,1,Batch2,SE IE,GBP,ABBEYWOOD COMMUNITY SCHOOL,,,,Active,STOKE GIFFORD,United Kingdom
+"",,EBA,Active,,EVERGREEN,A00006669,1,Batch2,SE IE,GBP,ABBEYWOOD COMMUNITY SCHOOL,,,,Active,STOKE GIFFORD,United Kingdom
+"",,EBA,Active,,EVERGREEN,A00006669,1,Batch2,SE IE,GBP,ABBEYWOOD COMMUNITY SCHOOL,,,,Active,STOKE GIFFORD,United Kingdom
+"",,EBA,Active,,EVERGREEN,A00006669,1,Batch2,SE IE,GBP,ABBEYWOOD COMMUNITY SCHOOL,,,,Active,STOKE GIFFORD,United Kingdom
+"",,EBA,Active,2018-12-01,TERMED,A00006227,1,Batch1,SE IE,SGD,,,,,Active,City,Singapore
+"",,EBA,Active,,EVERGREEN,A00006669,1,Batch2,SE IE,GBP,ABBEYWOOD COMMUNITY SCHOOL,,,,Active,STOKE GIFFORD,United Kingdom
+"",,EBA,Active,,EVERGREEN,A00006669,1,Batch2,SE IE,GBP,ABBEYWOOD COMMUNITY SCHOOL,,,,Active,STOKE GIFFORD,United Kingdom
+"",,EBA,Active,,EVERGREEN,A00006669,1,Batch2,SE IE,GBP,ABBEYWOOD COMMUNITY SCHOOL,,,,Active,STOKE GIFFORD,United Kingdom
+"",,EBA,Active,,EVERGREEN,A00006669,1,Batch2,SE IE,GBP,ABBEYWOOD COMMUNITY SCHOOL,,,,Active,STOKE GIFFORD,United Kingdom
+"",,EBA,Active,,EVERGREEN,A00006669,1,Batch2,SE IE,GBP,ABBEYWOOD COMMUNITY SCHOOL,,,,Active,STOKE GIFFORD,United Kingdom
+"",,EBA,Active,,EVERGREEN,A00006669,1,Batch2,SE IE,GBP,ABBEYWOOD COMMUNITY SCHOOL,,,,Active,STOKE GIFFORD,United Kingdom
+"",,EBA,Active,2019-10-08,TERMED,A00001005,15,Batch1,SE FR,USD,GP Test Solar,,,,Active,New York,France
+"",,EBA,Active,2019-10-12,TERMED,A00006080,1,Batch5,SE AU,EUR,THBS123!,,,1234,Active,New York,France
+"",,EBA,Active,2019-10-12,TERMED,A00006080,1,Batch5,SE AU,EUR,THBS123!,,,1234,Active,New York,France
+"",,EBA,Active,2019-10-15,TERMED,A00006080,1,Batch5,SE AU,EUR,THBS123!,,,1234,Active,New York,France
+"",,EBA,Active,2019-10-15,TERMED,A00006080,1,Batch5,SE AU,EUR,THBS123!,,,1234,Active,New York,France
+"",,EBA,Active,2019-10-15,TERMED,A00006080,1,Batch5,SE AU,EUR,THBS123!,,,1234,Active,New York,France
+"",,EBA,Active,2019-10-15,TERMED,A00006080,1,Batch5,SE AU,EUR,THBS123!,,,1234,Active,New York,France
+"",,EBA,Active,2019-10-15,TERMED,A00006080,1,Batch5,SE AU,EUR,THBS123!,,,1234,Active,New York,France
+"",,EBA,Active,2019-10-15,TERMED,A00006080,1,Batch5,SE AU,EUR,THBS123!,,,1234,Active,New York,France
+"",,EBA,Active,2019-10-15,TERMED,A00006080,1,Batch5,SE AU,EUR,THBS123!,,,1234,Active,New York,France
+"",,EBA,Active,2019-10-16,TERMED,A00006080,1,Batch5,SE AU,EUR,THBS123!,,,1234,Active,New York,France
+"",,EBA,Active,2019-10-16,TERMED,A00006080,1,Batch5,SE AU,EUR,THBS123!,,,1234,Active,New York,France
+"",,EBA,Active,2019-10-16,TERMED,A00006080,1,Batch5,SE AU,EUR,THBS123!,,,1234,Active,New York,France
+"",,EBA,Active,2019-10-16,TERMED,A00006080,1,Batch5,SE AU,EUR,THBS123!,,,1234,Active,New York,France
+"",,EBA,Active,2019-10-16,TERMED,A00006080,1,Batch5,SE AU,EUR,THBS123!,,,1234,Active,New York,France
+"",,EBA,Active,2020-02-01,TERMED,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,,EVERGREEN,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,,EVERGREEN,A00006669,1,Batch2,SE IE,GBP,ABBEYWOOD COMMUNITY SCHOOL,,,,Active,STOKE GIFFORD,United Kingdom
+"",,EBA,Active,,EVERGREEN,A00006669,1,Batch2,SE IE,GBP,ABBEYWOOD COMMUNITY SCHOOL,,,,Active,STOKE GIFFORD,United Kingdom
+"",,EBA,Active,,EVERGREEN,A00006669,1,Batch2,SE IE,GBP,ABBEYWOOD COMMUNITY SCHOOL,,,,Active,STOKE GIFFORD,United Kingdom
+"",,EBA,Active,,EVERGREEN,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,,EVERGREEN,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,2019-07-01,TERMED,A00006669,1,Batch2,SE IE,GBP,ABBEYWOOD COMMUNITY SCHOOL,,,,Active,STOKE GIFFORD,United Kingdom
+"",,EBA,Active,,EVERGREEN,A00006092,16,Batch49,SE FR,EUR,,,,,Active,Les Lilas,France
+"",,EBA,Active,,EVERGREEN,A00006669,1,Batch2,SE IE,GBP,ABBEYWOOD COMMUNITY SCHOOL,,,,Active,STOKE GIFFORD,United Kingdom
+"",,EBA,Active,,EVERGREEN,A00006669,1,Batch2,SE IE,GBP,ABBEYWOOD COMMUNITY SCHOOL,,,,Active,STOKE GIFFORD,United Kingdom
+"",,EBA,Active,,EVERGREEN,A00006669,1,Batch2,SE IE,GBP,ABBEYWOOD COMMUNITY SCHOOL,,,,Active,STOKE GIFFORD,United Kingdom
+"",,EBA,Active,,EVERGREEN,A00006669,1,Batch2,SE IE,GBP,ABBEYWOOD COMMUNITY SCHOOL,,,,Active,STOKE GIFFORD,United Kingdom
+"",,EBA,Active,,EVERGREEN,A00006669,1,Batch2,SE IE,GBP,ABBEYWOOD COMMUNITY SCHOOL,,,,Active,STOKE GIFFORD,United Kingdom
+"",,EBA,Active,,EVERGREEN,A00006669,1,Batch2,SE IE,GBP,ABBEYWOOD COMMUNITY SCHOOL,,,,Active,STOKE GIFFORD,United Kingdom
