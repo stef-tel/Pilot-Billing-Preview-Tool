@@ -110,6 +110,7 @@ class mainFrame(Frame):
     def startNewProcess(self):
         if messagebox.askyesno("start New Process","You're about to start a new Process This will restart everything, including launching a new Billing Preview. Are you OK ?"):
             self.changeButtonState('NewAllIn')
+            print('NewAllIn')
 
 
 
