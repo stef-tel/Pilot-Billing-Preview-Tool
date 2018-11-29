@@ -7,12 +7,14 @@ from tkinter import ttk
 from module1 import connectionDetails, ZToken
 from tkinter import font
 import os, time
+from tkinter import messagebox
 
 class mainFrame(Frame):
     def __init__(self):
         super().__init__()
         self.allInOneValue = StringVar()
         self.mainWidgets()
+        self.changeButtonState('New')
 
     def mainWidgets(self):
         #self.columnconfigure(0, pad=3)
@@ -37,7 +39,7 @@ class mainFrame(Frame):
         #print(image_path)
         self.bigGo = PhotoImage(file=image_path)
 
-        startNew = Button(self, image=self.bigGo)
+        startNew = Button(self, image=self.bigGo,command = self.startNewProcess) 
         startNew.grid(row=2,column=0)
         zFont2= font.Font(family="Helvetica",size=7)
         startNewLabel = Label(self,text="Start New Process",background='white',foreground='green',font=zFont1,pady=5)
@@ -45,7 +47,7 @@ class mainFrame(Frame):
 
         self.allInOneCheck = Checkbutton(
             self,
-            variable=self.allInOneValue,onvalue="Y", offvalue="N",background='white',command=self.changeButtonState)
+            variable=self.allInOneValue,onvalue="NewAllIn", offvalue="NewNotAllIn",background='white',command= lambda: self.changeButtonState(self.allInOneValue.get()))
         self.allInOneCheck.select()
         self.allInOneCheck.grid(row=2,column=4)
         allInOne = Label(self,text="All In One Step !",background='white',foreground='green')
@@ -55,8 +57,8 @@ class mainFrame(Frame):
         image_path2 = os.path.join(base_folder, 'smallGo.png')
         self.smallGo = PhotoImage(file=image_path2)
 
-        login = Button(self, image=self.smallGo,foreground='blue')
-        login.grid(row=3,column=0)
+        self.login = Button(self, image=self.smallGo,foreground='blue')
+        self.login.grid(row=3,column=0)
         loginLabel = Label(self,text="Login",background='white',foreground='grey',font=zFont2,pady=5)
         loginLabel.grid(row=3,column=1,pady=5)
 
@@ -84,17 +86,32 @@ class mainFrame(Frame):
         self.grid()
         self.configure(background='white') 
 
-    def changeButtonState(self):
-        container = tk.Button(self)
+    def changeButtonState(self,state):
+        #container = tk.Button(self)
 
-        choice = self.allInOneValue.get()
-        if choice == 'Y':
+        if state == 'New':
             currentState = 'disabled'
-        else:
+            for myWidget in (self.launchBilling, self.launchDataSource, self.arrangeHeaders, self.finalize,self.allInOneCheck, self.login):
+                myWidget.config(state=currentState)
+        elif state == 'NewAllIn':
+            currentState = 'disabled'
+            for myButton in (self.launchBilling, self.launchDataSource, self.arrangeHeaders, self.finalize):
+                myButton.config(state=currentState)
             currentState = 'active'
-        for myButton in (self.launchBilling, self.launchDataSource, self.arrangeHeaders, self.finalize):
-            myButton.config(state=currentState)
-            
+            for myButton in (self.login, self.allInOneCheck):
+                myButton.config(state=currentState)
+        elif state == 'NewNotAllIn':
+                    currentState = 'active'
+                    for myButton in (self.launchBilling, self.launchDataSource, self.arrangeHeaders, self.finalize):
+                        myButton.config(state=currentState)
+        else :
+            print('to be handle')
+
+    def startNewProcess(self):
+        if messagebox.askyesno("start New Process","You're about to start a new Process This will restart everything, including launching a new Billing Preview. Are you OK ?"):
+            self.changeButtonState('NewAllIn')
+
+
 
 def main():
     
