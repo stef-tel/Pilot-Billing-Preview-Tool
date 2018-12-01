@@ -39,7 +39,7 @@ class mainFrame(Frame):
         #print(image_path)
         self.bigGo = PhotoImage(file=image_path)
 
-        startNew = Button(self, image=self.bigGo,command = self.startNewProcess) 
+        startNew = Button(self, text="StartNew",image=self.bigGo,command = self.startNewProcess) 
         startNew.grid(row=2,column=0)
         zFont2= font.Font(family="Helvetica",size=7)
         startNewLabel = Label(self,text="Start New Process",background='white',foreground='green',font=zFont1,pady=5)
@@ -47,7 +47,8 @@ class mainFrame(Frame):
 
         self.allInOneCheck = Checkbutton(
             self,
-            variable=self.allInOneValue,onvalue="NewAllIn", offvalue="NewNotAllIn",background='white',command= lambda: self.changeButtonState(self.allInOneValue.get()))
+            #variable=self.allInOneValue,text="allInOneCheck",onvalue="NewAllIn", offvalue="NewNotAllIn",background='white',command= lambda: self.changeButtonState(self.allInOneValue.get()))
+            variable=self.allInOneValue,text="allInOneCheck",onvalue="NewAllIn", offvalue="NewNotAllIn",background='white')
         self.allInOneCheck.select()
         self.allInOneCheck.grid(row=2,column=4)
         allInOne = Label(self,text="All In One Step !",background='white',foreground='green')
@@ -57,27 +58,27 @@ class mainFrame(Frame):
         image_path2 = os.path.join(base_folder, 'smallGo.png')
         self.smallGo = PhotoImage(file=image_path2)
 
-        self.login = Button(self, image=self.smallGo,foreground='blue')
+        self.login = Button(self, image=self.smallGo,foreground='blue',text="login",command=self.login)
         self.login.grid(row=3,column=0)
         loginLabel = Label(self,text="Login",background='white',foreground='grey',font=zFont2,pady=5)
         loginLabel.grid(row=3,column=1,pady=5)
 
-        self.launchBilling = Button(self, image=self.smallGo,foreground='blue')
+        self.launchBilling = Button(self, image=self.smallGo,foreground='blue',text="launchBilling")
         self.launchBilling.grid(row=3,column=2)
         launcBillingLabel = Label(self,text="Launch Billing Preview",background='white',foreground='grey',font=zFont2,pady=5)
         launcBillingLabel.grid(row=3,column=3)
 
-        self.launchDataSource = Button(self, image=self.smallGo,foreground='blue')
+        self.launchDataSource = Button(self, image=self.smallGo,foreground='blue', text="launchDataSource")
         self.launchDataSource.grid(row=3,column=4)
         dataSourceLabel = Label(self,text="Launch Data source",background='white',foreground='grey',font=zFont2,pady=5)
         dataSourceLabel.grid(row=3,column=5)
 
-        self.arrangeHeaders = Button(self, image=self.smallGo,foreground='blue')
+        self.arrangeHeaders = Button(self, image=self.smallGo,foreground='blue',text="arrangeHeaders")
         self.arrangeHeaders.grid(row=3,column=6)
         headersLabel = Label(self,text="Arrange Headers",background='white',foreground='grey',font=zFont2,pady=5)
         headersLabel.grid(row=3,column=7)
 
-        self.finalize = Button(self, image=self.smallGo,foreground='blue')
+        self.finalize = Button(self, image=self.smallGo,foreground='blue',text="finalize")
         self.finalize.grid(row=3,column=8)
         finalizeLabel = Label(self,text="Finalize",background='white',foreground='grey',font=zFont2,pady=5)
         finalizeLabel.grid(row=3,column=9)
@@ -86,31 +87,42 @@ class mainFrame(Frame):
         self.grid()
         self.configure(background='white') 
 
-    def changeButtonState(self,state):
+    def changeButtonState(self,workflowStep):
         #container = tk.Button(self)
+        widgetList = [self.allInOneCheck, self.launchBilling, self.login, self.launchBilling, self.launchDataSource, self.arrangeHeaders, self.finalize]
 
-        if state == 'New':
-            currentState = 'disabled'
-            for myWidget in (self.launchBilling, self.launchDataSource, self.arrangeHeaders, self.finalize,self.allInOneCheck, self.login):
-                myWidget.config(state=currentState)
-        elif state == 'NewAllIn':
-            currentState = 'disabled'
-            for myButton in (self.launchBilling, self.launchDataSource, self.arrangeHeaders, self.finalize):
-                myButton.config(state=currentState)
-            currentState = 'active'
-            for myButton in (self.login, self.allInOneCheck):
-                myButton.config(state=currentState)
-        elif state == 'NewNotAllIn':
-                    currentState = 'active'
-                    for myButton in (self.launchBilling, self.launchDataSource, self.arrangeHeaders, self.finalize):
-                        myButton.config(state=currentState)
+        if workflowStep == 'New':
+            buttonsState = {'StartNew':'active', 'allInOneCheck':'disabled', 'login':'disabled', \
+                            'launchBilling':'disabled','launchDataSource':'disabled','arrangeHeaders':'disabled','finalize':'disabled'}
+
+        elif workflowStep == 'Start':
+            buttonsState = {'StartNew':'active', 'allInOneCheck':'active', 'login':'active', \
+                            'launchBilling':'disabled','launchDataSource':'disabled','arrangeHeaders':'disabled','finalize':'disabled'}
+
+        elif workflowStep == 'Login':
+            buttonsState = {'StartNew':'active', 'allInOneCheck':'disabled', 'login':'disabled', \
+                            'launchBilling':'active','launchDataSource':'active','arrangeHeaders':'disabled','finalize':'disabled'}
+
         else :
             print('to be handle')
+        
+        for myWidget in (widgetList):
+            nextState = buttonsState[myWidget.cget("text")]    
+            myWidget.config(state=nextState)
 
     def startNewProcess(self):
         if messagebox.askyesno("start New Process","You're about to start a new Process This will restart everything, including launching a new Billing Preview. Are you OK ?"):
-            self.changeButtonState('NewAllIn')
-            print('NewAllIn')
+            self.changeButtonState('Start')
+            print('Start')
+
+    def login(self):
+        if self.allInOneValue.get() == "Y":
+            self.changeButtonState('Login')
+            print('Login1')
+        else:
+            self.changeButtonState('Login')
+            print(self.allInOneValue.get())
+            print('Login2')
 
 
 
